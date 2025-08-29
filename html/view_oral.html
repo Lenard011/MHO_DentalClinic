@@ -310,7 +310,7 @@
                 <p class="italic text-lg font-medium text-gray-900 dark:text-white mb-2">Lenard G. Galgo</p>
 
                 <div
-                    class="mx-auto  max-w-screen-xl px-1.5 py-2 lg:px-1.5 bg-white rounded-lg shadow dark:border shadow-stone-300 drop-shadow-sm dark:bg-gray-800 dark:border-gray-950">
+                    class="mx-auto mb-3 max-w-screen-xl px-1.5 py-2 lg:px-1.5 bg-white rounded-lg shadow dark:border shadow-stone-300 drop-shadow-sm dark:bg-gray-800 dark:border-gray-950">
                     <div class="items-center justify-between flex flex-row">
                         <p class="text-base font-normal text-gray-950 dark:text-white ">Oral Examination</p>
                     </div>
@@ -713,8 +713,13 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
+                <div class="flex justify-end">
+                        <button type="button" onclick="next()"
+                            class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-15 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Next
+                        </button>
+                    </div>
             </section>
         </main>
     </div>
@@ -725,6 +730,10 @@
     <script>
         function back() {
             location.href = ("treatmentrecords.html");
+        }
+
+        function next(){
+            location.href = ("view_oralA.html");
         }
     </script>
 </body>
