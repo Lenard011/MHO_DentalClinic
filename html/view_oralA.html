@@ -11,9 +11,9 @@
         .arch {
             display: flex;
             flex-direction: row;
-            gap: 10px;
+            gap: 25px;
             justify-content: center;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
             /* margin-top: -10px; */
         }
 
@@ -24,16 +24,6 @@
         .down {
             margin-top: -10px;
         }
-
-        .lowerarch {
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-            justify-content: center;
-            margin-bottom: 5px;
-            /* margin-top: -10px; */
-        }
-
 
         .label {
             display: flex;
@@ -46,9 +36,9 @@
         .treatmentbox {
             display: flex;
             flex-direction: row;
-            gap: 15px;
+            gap: 31px;
             justify-content: center;
-            margin-bottom: 2px;
+            margin-bottom: 5px;
         }
 
         .treatment-box {
@@ -75,7 +65,7 @@
             position: absolute;
             box-sizing: border-box;
             background-color: white;
-            border: 1px solid #555;
+            border: 1px solid #747474;
         }
 
         .part-top-left {
@@ -117,7 +107,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             border-radius: 50%;
-            border: 1px solid #555;
+            border: 1px solid #747474;
             position: absolute;
             background: white;
         }
@@ -125,7 +115,7 @@
         .tooth-label {
             margin-top: 5px;
             font-size: 12px;
-            font-weight: 500;
+            font-weight:normal;
         }
 
         .section-title {
@@ -423,7 +413,7 @@
                                     Health Condition</a>
                             </li>
                             <li>
-                                <a href="view_record"
+                                <a href="view_record.html"
                                     class="block py-2 pr-4 pl-3 text-gray-800 border-b font-semibold border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Record
                                     of Sevices Rendered</a>
                             </li>
@@ -431,7 +421,7 @@
                     </div>
                 </div>
             </nav>
-        </header>
+        </header>     
         <main class="p-1.5 md:ml-64 h-auto pt-1">
             <section class="bg-white dark:bg-gray-900 p-2 sm:p-2 rounded-lg">
                 <p class="italic text-lg font-medium text-gray-900 dark:text-white mb-2">Lenard G. Galgo</p>
@@ -447,20 +437,20 @@
                                 Year I
                             </button>
                             <button type="button" onclick="year2()" style="font-size: 12px;"
-                                class="text-black border-1 shadow drop-shadow-sm justify-center  cursor-pointer inline-flex items-center bg-white-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-normal px-3 py-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                Year I
+                                class="text-black border-1 shadow drop-shadow-sm justify-center  cursor-pointer inline-flex items-center bg-white-700 hover:bg-blue-800 hover:text-white  focus:outline-none focus:ring-blue-300 font-normal px-3 py-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Year II
                             </button>
                             <button type="button" onclick="year3()" style="font-size: 12px;"
-                                class="text-black border-1 shadow drop-shadow-sm justify-center  cursor-pointer inline-flex items-center bg-white-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-normal px-3 py-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                Year I
+                                class="text-black border-1 shadow drop-shadow-sm justify-center  cursor-pointer inline-flex items-center bg-white-700 hover:bg-blue-800 hover:text-white  focus:outline-none focus:ring-blue-300 font-normal px-3 py-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Year III
                             </button>
                             <button type="button" onclick="year4()" style="font-size: 12px;"
-                                class="text-black border-1 shadow drop-shadow-sm justify-center  cursor-pointer inline-flex items-center bg-white-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-normal px-3 py-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                Year I
+                                class="text-black border-1 shadow drop-shadow-sm justify-center  cursor-pointer inline-flex items-center bg-white-700 hover:bg-blue-800 hover:text-white  focus:outline-none focus:ring-blue-300 font-normal px-3 py-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Year IV
                             </button>
                             <button type="button" onclick="year5()" style="font-size: 12px;"
-                                class="text-black border-1 shadow drop-shadow-sm justify-center  cursor-pointer inline-flex items-center bg-white-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-normal px-3 py-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                Year I
+                                class="text-black border-1 shadow drop-shadow-sm justify-center  cursor-pointer inline-flex items-center bg-white-700 hover:bg-blue-800 hover:text-white  focus:outline-none focus:ring-blue-300 font-normal px-3 py-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Year V
                             </button>
                         </div>
                     </div>
@@ -1107,7 +1097,7 @@
                             class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-15 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Back
                         </button>
-                        <button type="button"
+                        <button type="button" onclick="next()"
                             class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-15 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Next
                         </button>
@@ -1121,6 +1111,9 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="../js/tailwind.config.js"></script>
     <script>
+        function next() {
+            location.href = ("view_oralB.html");
+        }
         function back() {
             location.href = ("view_oral.html");
         }
