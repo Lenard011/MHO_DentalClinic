@@ -7,6 +7,141 @@
     <title>Patient Information</title>
     <!-- <link href="../css/style.css" rel="stylesheet"> -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .controls {
+            margin-bottom: 20px;
+        }
+
+
+
+        .grid1 {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gridtop {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .tooth-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tooth {
+            width: 40px;
+            height: 40px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .tooth-label {
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .label-top {
+            margin-bottom: 5px;
+        }
+
+        .label-bottom {
+            margin-top: 5px;
+        }
+
+
+
+        .part {
+            position: absolute;
+            box-sizing: border-box;
+            background-color: white;
+            border: 1px solid #747474;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* Each of the 5 sections now has its own full border */
+        .part-top-left {
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 50%;
+            border: 1px solid #555;
+            border-top-left-radius: 100%;
+        }
+
+        .part-top-right {
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 50%;
+            border: 1px solid #555;
+            border-top-right-radius: 100%;
+        }
+
+        .part-bottom-left {
+            bottom: 0;
+            left: 0;
+            width: 50%;
+            height: 50%;
+            border: 1px solid #555;
+            border-bottom-left-radius: 100%;
+        }
+
+        .part-bottom-right {
+            bottom: 0;
+            right: 0;
+            width: 50%;
+            height: 50%;
+            border: 1px solid #555;
+            border-bottom-right-radius: 100%;
+        }
+
+        .part-center {
+            width: 20px;
+            height: 20px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            border: 1px solid #555;
+            position: absolute;
+        }
+
+        .tooltip {
+            visibility: hidden;
+            background-color: #222;
+            color: #fff;
+            padding: 4px 6px;
+            border-radius: 4px;
+            font-size: 12px;
+            position: absolute;
+            bottom: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        .tooth:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body>
@@ -887,6 +1022,85 @@
                 </button>
             </div>
         </main>
+        <!-- Oral Health Condition A -->
+        <main class="p-3 md:ml-64 h-auto pt-15" id="oralhealthA&B" style="display: none; flex-direction: column;">
+            <div class="text-center">
+                <p class="text-lg font-semibold  text-gray-900 dark:text-white">Oral Health Condition
+                </p>
+            </div>
+
+            <section class="bg-white dark:bg-gray-900 p-3 rounded-lg mb-3 mt-3">
+
+                <form action="#">
+                    <div class="grid gap-2 mb-4">
+                        <!-- A. -->
+                        <div class="mb-3">
+                            <p class="text-14 font-semibold  text-gray-900 dark:text-white">A. Oral Health Condition
+                            </p>
+                        </div>
+                        <div class="controls">
+                            <label><strong>Color Code:</strong></label>
+                            <select id="blueSelect"
+                                class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-18 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                <option value="">Blue</option>
+                                <option value="S">Sound/Sealed (✓)</option>
+                                <option value="D">Decayed</option>
+                                <option value="F">Filled</option>
+                                <option value="M">Missing</option>
+                                <option value="DX">Indicated for Extraction</option>
+                                <option value="Un">Unerupted</option>
+                                <option value="s">Supernumerary Tooth</option>
+                                <option value="JC">Jacket Crown</option>
+                                <option value="P">Pontic</option>
+                            </select>
+                            <select id="redSelect"
+                                class="text-white justify-center  cursor-pointer inline-flex items-center bg-red-700 hover:bg-red-800  focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-1 w-18 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
+                                <option value="">Red</option>
+                                <option value="S">Sound/Sealed (✓)</option>
+                                <option value="D">Decayed</option>
+                                <option value="F">Filled</option>
+                                <option value="M">Missing</option>
+                                <option value="DX">Indicated for Extraction</option>
+                                <option value="Un">Unerupted</option>
+                                <option value="s">Supernumerary Tooth</option>
+                                <option value="JC">Jacket Crown</option>
+                                <option value="P">Pontic</option>
+                            </select>
+
+                            <input type="checkbox" id="upperCaseChk" checked> Permanent
+                            <input type="checkbox" id="lowerCaseChk"> Temporary
+
+                            <button
+                                class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-18 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                id="undoBtn">Undo</button>
+                            <button
+                                class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-18 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                id="redoBtn">Redo</button>
+                            <button
+                                class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-18 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                id="clearAll">Clear All</button>
+                        </div>
+                        <div>
+                            <div class="gridtop" id="permanentGridtop"></div>
+                            <div class="grid1" id="permanentGridbot"></div>
+
+                            <div class="gridtop" id="temporaryGridtop"></div>
+                            <div class="grid1" id="temporaryGridbot"></div>
+
+                        </div>
+                </form>
+            </section>
+            <div class="flex justify-between w-full">
+                <button type="button" onclick="back2()"
+                    class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-18 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Back
+                </button>
+                <button type="button" onclick="next2()"
+                    class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-18 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Next
+                </button>
+            </div>
+        </main>
     </div>
 
     <!-- <script src="../node_modules/flowbite/dist/flowbite.min.js"></script> -->
@@ -902,17 +1116,256 @@
             document.getElementById("patienttreatment").style.display = "flex";
             document.getElementById("patienttreatmentvital").style.display = "none";
             document.getElementById("oralhealth").style.display = "none";
+            document.getElementById("oralhealthA&B").style.display = "none";
         }
         function next1() {
             document.getElementById("patienttreatment").style.display = "none";
             document.getElementById("patienttreatmentvital").style.display = "none";
             document.getElementById("oralhealth").style.display = "flex";
+            document.getElementById("oralhealthA&B").style.display = "none";
         }
         function back1() {
             document.getElementById("patienttreatment").style.display = "none";
             document.getElementById("patienttreatmentvital").style.display = "flex";
             document.getElementById("oralhealth").style.display = "none";
+            document.getElementById("oralhealthA&B").style.display = "none";
         }
+        function next2() {
+            document.getElementById("patienttreatment").style.display = "none";
+            document.getElementById("patienttreatmentvital").style.display = "none";
+            document.getElementById("oralhealth").style.display = "none";
+            document.getElementById("oralhealthA&B").style.display = "flex";
+        }
+        function back2() {
+            document.getElementById("patienttreatment").style.display = "none";
+            document.getElementById("patienttreatmentvital").style.display = "none";
+            document.getElementById("oralhealth").style.display = "flex";
+            document.getElementById("oralhealthA&B").style.display = "none";
+        }
+    </script>
+    <!-- Tooth -->
+    <script>
+        const teethParts = ['top-left', 'top-right', 'bottom-left', 'bottom-right', 'center'];
+        let selectedColor = '';
+        let selectedCondition = '';
+        let selectedCase = 'upper'; // only affects NEW marks
+        const historyStack = [];
+        const redoStack = [];
+
+        const blueSelect = document.getElementById('blueSelect');
+        const redSelect = document.getElementById('redSelect');
+        const upperCaseChk = document.getElementById('upperCaseChk');
+        const lowerCaseChk = document.getElementById('lowerCaseChk');
+
+        blueSelect.addEventListener('change', () => {
+            selectedCondition = blueSelect.value;
+            selectedColor = selectedCondition ? 'blue' : '';
+            redSelect.value = '';
+        });
+
+        redSelect.addEventListener('change', () => {
+            selectedCondition = redSelect.value;
+            selectedColor = selectedCondition ? 'red' : '';
+            blueSelect.value = '';
+        });
+
+        function updateCaseSelection() {
+            if (this.id === "upperCaseChk") {
+                selectedCase = 'upper';
+                upperCaseChk.checked = true;
+                lowerCaseChk.checked = false;
+            } else {
+                selectedCase = 'lower';
+                lowerCaseChk.checked = true;
+                upperCaseChk.checked = false;
+            }
+            // Do NOT refresh existing marks → they keep their case
+        }
+
+        upperCaseChk.addEventListener('change', updateCaseSelection);
+        lowerCaseChk.addEventListener('change', updateCaseSelection);
+
+        document.getElementById('undoBtn').addEventListener('click', () => {
+            const last = historyStack.pop();
+            if (last) {
+                applyChange(last.key, last.prevColor, last.prevCondition, last.prevCase);
+                redoStack.push(last);
+            }
+        });
+
+        document.getElementById('redoBtn').addEventListener('click', () => {
+            const next = redoStack.pop();
+            if (next) {
+                applyChange(next.key, next.newColor, next.newCondition, next.newCase);
+                historyStack.push(next);
+            }
+        });
+
+        document.getElementById('clearAll').addEventListener('click', () => {
+            localStorage.clear();
+            historyStack.length = 0;
+            redoStack.length = 0;
+            document.querySelectorAll('.part').forEach(part => {
+                part.style.backgroundColor = '#fff';
+                part.textContent = '';
+                part.dataset.condition = '';
+                part.dataset.color = '';
+            });
+            blueSelect.value = '';
+            redSelect.value = '';
+            upperCaseChk.checked = true;
+            lowerCaseChk.checked = false;
+            selectedColor = '';
+            selectedCondition = '';
+            selectedCase = 'upper';
+        });
+
+        function applyChange(key, color, condition, textCase) {
+            const part = document.querySelector(`.part[data-key="${key}"]`);
+            if (part) {
+                let displayCondition = condition || '';
+                let bgColor = color || '#fff';
+                let textColor = '#fff';
+
+                if (condition.toLowerCase() === 's') {
+                    displayCondition = '✓';
+                    bgColor = '#fff';
+                    textColor = '#000';
+                } else if (condition.toLowerCase() === 'un') {
+                    displayCondition = (textCase === 'upper') ? 'Un' : 'un';
+                } else if (displayCondition) {
+                    displayCondition = (textCase === 'upper')
+                        ? displayCondition.toUpperCase()
+                        : displayCondition.toLowerCase();
+                }
+
+                part.style.backgroundColor = bgColor;
+                part.style.color = textColor;
+                part.textContent = displayCondition;
+                part.dataset.color = bgColor;
+                part.dataset.condition = condition || '';
+                part.dataset.case = textCase || 'upper';
+
+                if (!color) {
+                    localStorage.removeItem(key);
+                } else {
+                    localStorage.setItem(key, JSON.stringify({
+                        color: bgColor,
+                        condition,
+                        case: textCase
+                    }));
+                }
+            }
+        }
+
+        function createPart(toothId, partName) {
+            const part = document.createElement('div');
+            part.classList.add('part', `part-${partName}`);
+            const key = `${toothId}-${partName}`;
+            part.dataset.key = key;
+
+            const saved = localStorage.getItem(key);
+            if (saved) {
+                const { color, condition, case: savedCase } = JSON.parse(saved);
+                let displayCondition = condition;
+                let bgColor = color;
+                let textColor = '#fff';
+
+                if (condition.toLowerCase() === 's') {
+                    displayCondition = '✓';
+                    bgColor = '#fff';
+                    textColor = '#000';
+                } else if (condition.toLowerCase() === 'un') {
+                    displayCondition = (savedCase === 'upper') ? 'Un' : 'un';
+                } else if (displayCondition) {
+                    displayCondition = (savedCase === 'upper')
+                        ? displayCondition.toUpperCase()
+                        : displayCondition.toLowerCase();
+                }
+
+                part.style.backgroundColor = bgColor;
+                part.style.color = textColor;
+                part.textContent = displayCondition;
+                part.dataset.color = bgColor;
+                part.dataset.condition = condition;
+                part.dataset.case = savedCase || 'upper';
+            }
+
+            part.addEventListener('click', e => {
+                e.stopPropagation();
+                if (!selectedColor || !selectedCondition) {
+                    alert('Please select a condition.');
+                    return;
+                }
+
+                const prevColor = part.dataset.color || '';
+                const prevCondition = part.dataset.condition || '';
+                const prevCase = part.dataset.case || 'upper';
+
+                const newColor = selectedColor;
+                const newCondition = selectedCondition;
+                const newCase = selectedCase; // save current global case only for this mark
+
+                applyChange(key, newColor, newCondition, newCase);
+
+                historyStack.push({ key, prevColor, prevCondition, prevCase, newColor, newCondition, newCase });
+                redoStack.length = 0;
+            });
+
+            return part;
+        }
+
+        function createTooth(id, label, position = 'bottom') {
+            const container = document.createElement('div');
+            container.className = 'tooth-container';
+
+            const toothLabel = document.createElement('div');
+            toothLabel.className = `tooth-label label-${position}`;
+            toothLabel.textContent = label;
+
+            const tooth = document.createElement('div');
+            tooth.className = 'tooth';
+            tooth.id = id;
+
+            teethParts.forEach(partName => {
+                const part = createPart(id, partName);
+                tooth.appendChild(part);
+            });
+
+            const tooltip = document.createElement('div');
+            tooltip.className = 'tooltip';
+            tooltip.textContent = id;
+            tooth.appendChild(tooltip);
+
+            if (position === 'top') {
+                container.appendChild(toothLabel);
+                container.appendChild(tooth);
+            } else {
+                container.appendChild(tooth);
+                container.appendChild(toothLabel);
+            }
+
+            return container;
+        }
+
+        function loadGrid() {
+            const permanenttop = document.getElementById('permanentGridtop');
+            const permanentbot = document.getElementById('permanentGridbot');
+            const temporarytop = document.getElementById('temporaryGridtop');
+            const temporarybot = document.getElementById('temporaryGridbot');
+
+            const permCodestop = [55, 54, 53, 52, 51, 61, 62, 63, 64, 65];
+            const permCodesbot = [18, 17, 16, 15, 14, 13, 12, 11, 21, 22, 23, 24, 25, 26, 27, 28];
+            const tempCodestop = [48, 47, 46, 45, 44, 43, 42, 41, 31, 32, 33, 34, 35, 36, 37, 38];
+            const tempCodesbot = [85, 84, 83, 82, 81, 71, 72, 73, 74, 75];
+
+            permCodestop.forEach(num => permanenttop.appendChild(createTooth(`P-${num}`, num, 'top')));
+            permCodesbot.forEach(num => permanentbot.appendChild(createTooth(`P-${num}`, num, 'bottom')));
+            tempCodestop.forEach(num => temporarytop.appendChild(createTooth(`T-${num}`, num, 'top')));
+            tempCodesbot.forEach(num => temporarybot.appendChild(createTooth(`T-${num}`, num, 'bottom')));
+        }
+
+        loadGrid();
     </script>
 </body>
 
