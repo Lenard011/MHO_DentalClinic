@@ -12,21 +12,19 @@
             margin-bottom: 20px;
         }
 
-
-
         .grid1 {
             display: flex;
-            gap: 10px;
+            gap: 3px;
             justify-content: center;
             align-items: center;
         }
 
         .gridtop {
             display: flex;
-            gap: 10px;
+            gap: 3px;
             justify-content: center;
             align-items: center;
-            margin-bottom: 5px;
+            margin-bottom: 2px;
         }
 
         .tooth-container {
@@ -36,8 +34,8 @@
         }
 
         .tooth {
-            width: 40px;
-            height: 40px;
+            width: 39px;
+            height: 39px;
             position: relative;
             cursor: pointer;
         }
@@ -49,11 +47,11 @@
         }
 
         .label-top {
-            margin-bottom: 5px;
+            margin-bottom: 2px;
         }
 
         .label-bottom {
-            margin-top: 5px;
+            margin-top: 2px;
         }
 
 
@@ -109,8 +107,8 @@
         }
 
         .part-center {
-            width: 20px;
-            height: 20px;
+            width: 18px;
+            height: 18px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -140,6 +138,56 @@
         .tooth:hover .tooltip {
             visibility: visible;
             opacity: 1;
+        }
+
+        .treatmentbox {
+            display: grid;
+            grid-template-columns: repeat(16, 2rem);
+            gap: 10px;
+            margin: 5px auto;
+            justify-content: center;
+        }
+
+        .treatment-box {
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+            background: #fff;
+            color: #000;
+        }
+
+        .treatmentbox1 {
+            display: grid;
+            grid-template-columns: repeat(16, 2rem);
+            gap: 10px;
+            margin: 5px auto;
+            justify-content: center;
+        }
+
+        .treatment1-box {
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+            background: #fff;
+            color: #000;
         }
     </style>
 </head>
@@ -1029,64 +1077,104 @@
                 </p>
             </div>
 
-            <section class="bg-white dark:bg-gray-900 p-3 rounded-lg mb-3 mt-3">
-
-                <form action="#">
+            <section class="bg-white dark:bg-gray-900 p-2 rounded-lg mb-3 mt-3">
+                <div class="mb-3">
+                    <p class="text-14 font-semibold  text-gray-900 dark:text-white">A. Oral Health Condition
+                    </p>
+                </div>
+                <form action="#" class="border-1">
                     <div class="grid gap-2 mb-4">
                         <!-- A. -->
-                        <div class="mb-3">
-                            <p class="text-14 font-semibold  text-gray-900 dark:text-white">A. Oral Health Condition
-                            </p>
-                        </div>
-                        <div class="controls">
-                            <label><strong>Color Code:</strong></label>
-                            <select id="blueSelect"
-                                class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-18 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <option value="">Blue</option>
-                                <option value="S">Sound/Sealed (✓)</option>
-                                <option value="D">Decayed</option>
-                                <option value="F">Filled</option>
-                                <option value="M">Missing</option>
-                                <option value="DX">Indicated for Extraction</option>
-                                <option value="Un">Unerupted</option>
-                                <option value="s">Supernumerary Tooth</option>
-                                <option value="JC">Jacket Crown</option>
-                                <option value="P">Pontic</option>
-                            </select>
-                            <select id="redSelect"
-                                class="text-white justify-center  cursor-pointer inline-flex items-center bg-red-700 hover:bg-red-800  focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-1 w-18 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
-                                <option value="">Red</option>
-                                <option value="S">Sound/Sealed (✓)</option>
-                                <option value="D">Decayed</option>
-                                <option value="F">Filled</option>
-                                <option value="M">Missing</option>
-                                <option value="DX">Indicated for Extraction</option>
-                                <option value="Un">Unerupted</option>
-                                <option value="s">Supernumerary Tooth</option>
-                                <option value="JC">Jacket Crown</option>
-                                <option value="P">Pontic</option>
-                            </select>
+
+                        <div class="comtrols w-170 flex justify-center items-center flex-row gap-5">
+                            <div class="inline-flex items-baseline flex-row gap-2">
+                                <label class="text-lg font-semibold  text-gray-900 dark:text-white">Color Code:</label>
+                                <select id="blueSelect"
+                                    class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-31.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <option selected value="">Blue</option>
+                                    <option value="S">Sound/Sealed✓</option>
+                                    <option value="D">Blue D/d</option>
+                                    <option value="F">Blue F/f</option>
+                                    <option value="M">Blue M/m</option>
+                                    <option value="DX">Blue DX/dx</option>
+                                    <option value="Un">Blue Un/un</option>
+                                    <option value="S">Blue S/s</option>
+                                    <option value="JC">Blue JC/jc</option>
+                                    <option value="P">Blue P/p</option>
+                                </select>
+                                <select id="redSelect"
+                                    class="text-white justify-center  cursor-pointer inline-flex items-center bg-red-600 hover:bg-red-700  focus:outline-none focus:ring-red-200 font-medium rounded-lg text-sm p-1 w-31.5 dark:bg-red-500 dark:hover:bg-red-700 dark:focus:ring-red-700">
+                                    <option selected value="">Red</option>
+                                    <option value="S">Sound/Sealed✓</option>
+                                    <option value="D">Red D/d</option>
+                                    <option value="F">Red F/f</option>
+                                    <option value="M">Red M/m</option>
+                                    <option value="DX">Red DX/dx</option>
+                                    <option value="Un">Red Un/un</option>
+                                    <option value="S">Red S/s</option>
+                                    <option value="JC">Red JC/jc</option>
+                                    <option value="P">Red P/p</option>
+                                </select>
+                            </div>
 
                             <input type="checkbox" id="upperCaseChk" checked> Permanent
                             <input type="checkbox" id="lowerCaseChk"> Temporary
 
-                            <button
-                                class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-18 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                                id="undoBtn">Undo</button>
-                            <button
-                                class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-18 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                                id="redoBtn">Redo</button>
-                            <button
-                                class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-18 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                                id="clearAll">Clear All</button>
                         </div>
-                        <div>
+                        <div class="w-170 flex justify-center items-center flex-row gap-5">
+                            <!-- Undo Button -->
+                            <button class="text-white justify-center cursor-pointer inline-flex items-center gap-1 
+                                    bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-blue-300 
+                                    font-medium rounded-lg text-sm p-1 w-20 
+                                    dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="undoBtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3 7v6h6M3 13a9 9 0 0 1 9-9h3a9 9 0 0 1 9 9v1" />
+                                </svg>
+                                Undo
+                            </button>
+
+                            <!-- Redo Button -->
+                            <button class="text-white justify-center cursor-pointer inline-flex items-center gap-1 
+                                    bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-blue-300 
+                                    font-medium rounded-lg text-sm p-1 w-20 
+                                    dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="redoBtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 7v6h-6M21 13a9 9 0 0 0-9-9h-3a9 9 0 0 0-9 9v1" />
+                                </svg>
+                                Redo
+                            </button>
+
+                            <!-- Clear All Button -->
+                            <button class="text-white justify-center cursor-pointer inline-flex items-center gap-1
+                                    bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-blue-300 
+                                    font-medium rounded-lg text-sm p-1 w-24 
+                                    dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="clearAll">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19 7l-.867 12.142A2 2 0 0 1 16.138 21H7.862a2 2 0 0 1-1.995-1.858L5 7m5 4v6m4-6v6M1 7h22M10 3h4a1 1 0 0 1 1 1v2H9V4a1 1 0 0 1 1-1z" />
+                                </svg>
+                                Clear All
+                            </button>
+                        </div>
+                        <div class="w-170">
+                            <div class="treatmentbox" id="treatRow1"></div>
+                            <div class="treatmentbox" id="treatRow2"></div>
+                        </div>
+
+                        <div class="w-170">
                             <div class="gridtop" id="permanentGridtop"></div>
                             <div class="grid1" id="permanentGridbot"></div>
-
                             <div class="gridtop" id="temporaryGridtop"></div>
                             <div class="grid1" id="temporaryGridbot"></div>
-
+                        </div>
+                        <div class="w-170">
+                            <div class="treatmentbox1" id="treatRow3"></div>
+                            <div class="treatmentbox1" id="treatRow4"></div>
                         </div>
                 </form>
             </section>
@@ -1148,7 +1236,7 @@
         const teethParts = ['top-left', 'top-right', 'bottom-left', 'bottom-right', 'center'];
         let selectedColor = '';
         let selectedCondition = '';
-        let selectedCase = 'upper'; // only affects NEW marks
+        let selectedCase = 'upper';
         const historyStack = [];
         const redoStack = [];
 
@@ -1179,16 +1267,14 @@
                 lowerCaseChk.checked = true;
                 upperCaseChk.checked = false;
             }
-            // Do NOT refresh existing marks → they keep their case
         }
-
         upperCaseChk.addEventListener('change', updateCaseSelection);
         lowerCaseChk.addEventListener('change', updateCaseSelection);
 
         document.getElementById('undoBtn').addEventListener('click', () => {
             const last = historyStack.pop();
             if (last) {
-                applyChange(last.key, last.prevColor, last.prevCondition, last.prevCase);
+                applyChange(last.key, last.prevColor, last.prevCondition, last.prevCase, false);
                 redoStack.push(last);
             }
         });
@@ -1196,7 +1282,7 @@
         document.getElementById('redoBtn').addEventListener('click', () => {
             const next = redoStack.pop();
             if (next) {
-                applyChange(next.key, next.newColor, next.newCondition, next.newCase);
+                applyChange(next.key, next.newColor, next.newCondition, next.newCase, false);
                 historyStack.push(next);
             }
         });
@@ -1205,11 +1291,11 @@
             localStorage.clear();
             historyStack.length = 0;
             redoStack.length = 0;
-            document.querySelectorAll('.part').forEach(part => {
-                part.style.backgroundColor = '#fff';
-                part.textContent = '';
-                part.dataset.condition = '';
-                part.dataset.color = '';
+            document.querySelectorAll('.part, .treatment-box').forEach(el => {
+                el.style.backgroundColor = '#fff';
+                el.textContent = '';
+                el.dataset.condition = '';
+                el.dataset.color = '';
             });
             blueSelect.value = '';
             redSelect.value = '';
@@ -1220,43 +1306,46 @@
             selectedCase = 'upper';
         });
 
-        function applyChange(key, color, condition, textCase) {
-            const part = document.querySelector(`.part[data-key="${key}"]`);
-            if (part) {
-                let displayCondition = condition || '';
-                let bgColor = color || '#fff';
-                let textColor = '#fff';
+        function formatCondition(condition, textCase) {
+            if (!condition) return '';
+            if (condition.toLowerCase() === 's') return '✓';
+            if (condition.toLowerCase() === 'un') return (textCase === 'upper') ? 'Un' : 'un';
+            return (textCase === 'upper') ? condition.toUpperCase() : condition.toLowerCase();
+        }
 
-                if (condition.toLowerCase() === 's') {
-                    displayCondition = '✓';
-                    bgColor = '#fff';
-                    textColor = '#000';
-                } else if (condition.toLowerCase() === 'un') {
-                    displayCondition = (textCase === 'upper') ? 'Un' : 'un';
-                } else if (displayCondition) {
-                    displayCondition = (textCase === 'upper')
-                        ? displayCondition.toUpperCase()
-                        : displayCondition.toLowerCase();
-                }
+        function applyChange(key, color, condition, textCase, saveHistory = true) {
+            const el = document.querySelector(`[data-key="${key}"]`);
+            if (!el) return;
 
-                part.style.backgroundColor = bgColor;
-                part.style.color = textColor;
-                part.textContent = displayCondition;
-                part.dataset.color = bgColor;
-                part.dataset.condition = condition || '';
-                part.dataset.case = textCase || 'upper';
+            let displayCondition = formatCondition(condition, textCase);
 
-                if (!color) {
-                    localStorage.removeItem(key);
-                } else {
-                    localStorage.setItem(key, JSON.stringify({
-                        color: bgColor,
-                        condition,
-                        case: textCase
-                    }));
-                }
+            let bgColor = color || '#fff';
+            let textColor = '#fff';
+
+            if (condition.toLowerCase() === 's') {
+                // Sound/Sealed → always white background + black ✓
+                bgColor = '#fff';
+                textColor = '#000';
+            } else {
+                // All other conditions → use selected color background
+                bgColor = color || '#fff';
+                textColor = '#fff';
+            }
+
+            el.style.backgroundColor = bgColor;
+            el.style.color = textColor;
+            el.textContent = displayCondition;
+            el.dataset.color = color || '';
+            el.dataset.condition = condition || '';
+            el.dataset.case = textCase || 'upper';
+
+            if (!color || !condition) {
+                localStorage.removeItem(key);
+            } else {
+                localStorage.setItem(key, JSON.stringify({ color, condition, case: textCase }));
             }
         }
+
 
         function createPart(toothId, partName) {
             const part = document.createElement('div');
@@ -1267,28 +1356,7 @@
             const saved = localStorage.getItem(key);
             if (saved) {
                 const { color, condition, case: savedCase } = JSON.parse(saved);
-                let displayCondition = condition;
-                let bgColor = color;
-                let textColor = '#fff';
-
-                if (condition.toLowerCase() === 's') {
-                    displayCondition = '✓';
-                    bgColor = '#fff';
-                    textColor = '#000';
-                } else if (condition.toLowerCase() === 'un') {
-                    displayCondition = (savedCase === 'upper') ? 'Un' : 'un';
-                } else if (displayCondition) {
-                    displayCondition = (savedCase === 'upper')
-                        ? displayCondition.toUpperCase()
-                        : displayCondition.toLowerCase();
-                }
-
-                part.style.backgroundColor = bgColor;
-                part.style.color = textColor;
-                part.textContent = displayCondition;
-                part.dataset.color = bgColor;
-                part.dataset.condition = condition;
-                part.dataset.case = savedCase || 'upper';
+                applyChange(key, color, condition, savedCase, false);
             }
 
             part.addEventListener('click', e => {
@@ -1304,7 +1372,7 @@
 
                 const newColor = selectedColor;
                 const newCondition = selectedCondition;
-                const newCase = selectedCase; // save current global case only for this mark
+                const newCase = selectedCase;
 
                 applyChange(key, newColor, newCondition, newCase);
 
@@ -1365,7 +1433,153 @@
             tempCodesbot.forEach(num => temporarybot.appendChild(createTooth(`T-${num}`, num, 'bottom')));
         }
 
+        function loadTreatmentBoxes() {
+            const row1 = document.getElementById('treatRow1');
+            const row2 = document.getElementById('treatRow2');
+            const row3 = document.getElementById('treatRow3');
+            const row4 = document.getElementById('treatRow4');
+
+            for (let i = 0; i < 16; i++) {
+                const box = document.createElement('div');
+                box.className = 'treatment-box';
+                const key = `TB1-${i}`;
+                box.dataset.key = key;
+
+                const saved = localStorage.getItem(key);
+                if (saved) {
+                    const { color, condition, case: savedCase } = JSON.parse(saved);
+                    applyChange(key, color, condition, savedCase, false);
+                }
+
+                box.addEventListener('click', () => {
+                    if (!selectedColor || !selectedCondition) {
+                        alert('Please select a condition.');
+                        return;
+                    }
+
+                    const prevColor = box.dataset.color || '';
+                    const prevCondition = box.dataset.condition || '';
+                    const prevCase = box.dataset.case || 'upper';
+
+                    const newColor = selectedColor;
+                    const newCondition = selectedCondition;
+                    const newCase = selectedCase;
+
+                    applyChange(key, newColor, newCondition, newCase);
+
+                    historyStack.push({ key, prevColor, prevCondition, prevCase, newColor, newCondition, newCase });
+                    redoStack.length = 0;
+                });
+
+                row1.appendChild(box);
+            }
+
+            for (let i = 0; i < 16; i++) {
+                const box = document.createElement('div');
+                box.className = 'treatment-box';
+                const key = `TB2-${i}`;
+                box.dataset.key = key;
+
+                const saved = localStorage.getItem(key);
+                if (saved) {
+                    const { color, condition, case: savedCase } = JSON.parse(saved);
+                    applyChange(key, color, condition, savedCase, false);
+                }
+
+                box.addEventListener('click', () => {
+                    if (!selectedColor || !selectedCondition) {
+                        alert('Please select a condition.');
+                        return;
+                    }
+
+                    const prevColor = box.dataset.color || '';
+                    const prevCondition = box.dataset.condition || '';
+                    const prevCase = box.dataset.case || 'upper';
+
+                    const newColor = selectedColor;
+                    const newCondition = selectedCondition;
+                    const newCase = selectedCase;
+
+                    applyChange(key, newColor, newCondition, newCase);
+
+                    historyStack.push({ key, prevColor, prevCondition, prevCase, newColor, newCondition, newCase });
+                    redoStack.length = 0;
+                });
+
+                row2.appendChild(box);
+            }
+            for (let i = 0; i < 16; i++) {
+                const box = document.createElement('div');
+                box.className = 'treatment-box';
+                const key = `TB3-${i}`;
+                box.dataset.key = key;
+
+                const saved = localStorage.getItem(key);
+                if (saved) {
+                    const { color, condition, case: savedCase } = JSON.parse(saved);
+                    applyChange(key, color, condition, savedCase, false);
+                }
+
+                box.addEventListener('click', () => {
+                    if (!selectedColor || !selectedCondition) {
+                        alert('Please select a condition.');
+                        return;
+                    }
+
+                    const prevColor = box.dataset.color || '';
+                    const prevCondition = box.dataset.condition || '';
+                    const prevCase = box.dataset.case || 'upper';
+
+                    const newColor = selectedColor;
+                    const newCondition = selectedCondition;
+                    const newCase = selectedCase;
+
+                    applyChange(key, newColor, newCondition, newCase);
+
+                    historyStack.push({ key, prevColor, prevCondition, prevCase, newColor, newCondition, newCase });
+                    redoStack.length = 0;
+                });
+
+                row3.appendChild(box);
+            }
+            for (let i = 0; i < 16; i++) {
+                const box = document.createElement('div');
+                box.className = 'treatment-box';
+                const key = `TB4-${i}`;
+                box.dataset.key = key;
+
+                const saved = localStorage.getItem(key);
+                if (saved) {
+                    const { color, condition, case: savedCase } = JSON.parse(saved);
+                    applyChange(key, color, condition, savedCase, false);
+                }
+
+                box.addEventListener('click', () => {
+                    if (!selectedColor || !selectedCondition) {
+                        alert('Please select a condition.');
+                        return;
+                    }
+
+                    const prevColor = box.dataset.color || '';
+                    const prevCondition = box.dataset.condition || '';
+                    const prevCase = box.dataset.case || 'upper';
+
+                    const newColor = selectedColor;
+                    const newCondition = selectedCondition;
+                    const newCase = selectedCase;
+
+                    applyChange(key, newColor, newCondition, newCase);
+
+                    historyStack.push({ key, prevColor, prevCondition, prevCase, newColor, newCondition, newCase });
+                    redoStack.length = 0;
+                });
+
+                row4.appendChild(box);
+            }
+        }
+
         loadGrid();
+        loadTreatmentBoxes();
     </script>
 </body>
 
