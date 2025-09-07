@@ -1078,282 +1078,741 @@
             </div>
 
             <section class="bg-white dark:bg-gray-900 p-2 rounded-lg mb-3 mt-3">
-                <div class="mb-3">
-                    <p class="text-14 font-semibold  text-gray-900 dark:text-white">A. Oral Health Condition
-                    </p>
-                </div>
-                <form action="#">
-                    <div class="flex flex-row w-full justify-between items-center">
-                        <!-- Tooth Part -->
-                        <div class="flex flex-col  gap-2 mb-4  w-170 ">
-                            <!-- A. -->
-                            <div class="w-170 flex justify-center items-center flex-row gap-5">
-                                <!-- Undo Button -->
-                                <button type="button" class="text-white justify-center cursor-pointer inline-flex items-center gap-1 
+                <!-- Set A -->
+                <div>
+                    <div class="mb-3">
+                        <p class="text-14 font-semibold  text-gray-900 dark:text-white">A. Oral Health Condition
+                        </p>
+                    </div>
+                    <form action="#">
+                        <div class="flex flex-row w-full justify-between items-center">
+                            <!-- Tooth Part -->
+                            <div class="flex flex-col  gap-2 mb-4  w-170 ">
+                                <!-- A. -->
+                                <div class="w-170 flex justify-center items-center flex-row gap-5">
+                                    <!-- Undo Button -->
+                                    <button type="button" class="text-white justify-center cursor-pointer inline-flex items-center gap-1 
                                     bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-blue-300 
                                     font-medium rounded-lg text-sm p-1 w-20 
                                     dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="undoBtn">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M3 7v6h6M3 13a9 9 0 0 1 9-9h3a9 9 0 0 1 9 9v1" />
-                                    </svg>
-                                    Undo
-                                </button>
-                                <!-- Redo Button -->
-                                <button type="button" class="text-white justify-center cursor-pointer inline-flex items-center gap-1 
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M3 7v6h6M3 13a9 9 0 0 1 9-9h3a9 9 0 0 1 9 9v1" />
+                                        </svg>
+                                        Undo
+                                    </button>
+                                    <!-- Redo Button -->
+                                    <button type="button" class="text-white justify-center cursor-pointer inline-flex items-center gap-1 
                                     bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-blue-300 
                                     font-medium rounded-lg text-sm p-1 w-20 
                                     dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="redoBtn">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M21 7v6h-6M21 13a9 9 0 0 0-9-9h-3a9 9 0 0 0-9 9v1" />
-                                    </svg>
-                                    Redo
-                                </button>
-                                <!-- Clear All Button -->
-                                <button type="button" class="text-white justify-center cursor-pointer inline-flex items-center gap-1
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M21 7v6h-6M21 13a9 9 0 0 0-9-9h-3a9 9 0 0 0-9 9v1" />
+                                        </svg>
+                                        Redo
+                                    </button>
+                                    <!-- Clear All Button -->
+                                    <button type="button" class="text-white justify-center cursor-pointer inline-flex items-center gap-1
                                     bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-blue-300 
                                     font-medium rounded-lg text-sm p-1 w-24 
                                     dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="clearAll">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M19 7l-.867 12.142A2 2 0 0 1 16.138 21H7.862a2 2 0 0 1-1.995-1.858L5 7m5 4v6m4-6v6M1 7h22M10 3h4a1 1 0 0 1 1 1v2H9V4a1 1 0 0 1 1-1z" />
-                                    </svg>
-                                    Clear All
-                                </button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M19 7l-.867 12.142A2 2 0 0 1 16.138 21H7.862a2 2 0 0 1-1.995-1.858L5 7m5 4v6m4-6v6M1 7h22M10 3h4a1 1 0 0 1 1 1v2H9V4a1 1 0 0 1 1-1z" />
+                                        </svg>
+                                        Clear All
+                                    </button>
+                                </div>
+                                <p style="margin-bottom: -10px; margin-top: -10px;"
+                                    class="text-sm w-20 ml-2 font-normal text-gray-900 dark:text-white">Treatment
+                                </p>
+                                <div class="w-170">
+                                    <div class="treatmentbox" id="treatRow1"></div>
+                                    <div class="treatmentbox" id="treatRow2"></div>
+                                </div>
+                                <p style="margin-bottom: -30px; margin-top: -10px;"
+                                    class="text-sm w-20 ml-2 font-normal text-gray-900 dark:text-white">Condition
+                                </p>
+                                <div class="w-170">
+                                    <div class="gridtop" id="permanentGridtop"></div>
+                                    <div class="grid1" id="permanentGridbot"></div>
+                                    <div class="gridtop" id="temporaryGridtop"></div>
+                                    <div class="grid1" id="temporaryGridbot"></div>
+                                </div>
+                                <p style="margin-top: -30px; margin-bottom: -10px;"
+                                    class="text-sm w-20 ml-2 font-normal text-gray-900 dark:text-white">Condition
+                                </p>
+                                <div class="w-170">
+                                    <div class="treatmentbox1" id="treatRow3"></div>
+                                    <div class="treatmentbox1" id="treatRow4"></div>
+                                </div>
+                                <p style="margin-top: -10px;"
+                                    class="text-sm w-20 ml-2 font-normal text-gray-900 dark:text-white ">Treatment
+                                </p>
                             </div>
-                            <p style="margin-bottom: -10px; margin-top: -10px;" class="text-sm w-20 ml-2 font-semibold text-gray-900 dark:text-white">Treatment
-                            </p>
-                            <div class="w-170">
-                                <div class="treatmentbox" id="treatRow1"></div>
-                                <div class="treatmentbox" id="treatRow2"></div>
-                            </div>
-                            <p style="margin-bottom: -30px; margin-top: -10px;" class="text-sm w-20 ml-2 font-semibold text-gray-900 dark:text-white">Condition
-                            </p>
-                            <div class="w-170">
-                                <div class="gridtop" id="permanentGridtop"></div>
-                                <div class="grid1" id="permanentGridbot"></div>
-                                <div class="gridtop" id="temporaryGridtop"></div>
-                                <div class="grid1" id="temporaryGridbot"></div>
-                            </div>
-                            <p style="margin-top: -30px; margin-bottom: -10px;" class="text-sm w-20 ml-2 font-semibold text-gray-900 dark:text-white">Condition
-                            </p>
-                            <div class="w-170">
-                                <div class="treatmentbox1" id="treatRow3"></div>
-                                <div class="treatmentbox1" id="treatRow4"></div>
-                            </div>
-                            <p style="margin-top: -10px;" class="text-sm w-20 ml-2 font-semibold text-gray-900 dark:text-white ">Treatment
-                            </p>
-                        </div>
-                        <!-- Legend Condition -->
-                        <div class="flex flex-row gap-1 px-1  w-full  overflow-auto [scrollbar-width:none] [-ms-overflow-style:none] 
+                            <!-- Legend Condition -->
+                            <div class="flex flex-row gap-1 px-1  w-full  overflow-auto [scrollbar-width:none] [-ms-overflow-style:none] 
                                 [&::-webkit-scrollbar]:hidden">
-                            <!-- Condition -->
-                            <div
-                                class="controls relative w-full p-1 flex rounded-sm flex-col border border-dashed border-gray-400 [border-image:repeating-linear-gradient(45deg,#6b7280_0_10px,transparent_10px_15px)_1]">
-                                <div>
-                                    <p class="text-sm font-medium  text-gray-900 dark:text-white">Legend: <span
-                                            class="font-normal">Condition</span>
-                                    </p>
-                                    <p class="text-sm font-normal  text-gray-900 dark:text-white">Capital letters shall
-                                        be use for recording the condition of permanent dentition and small letters for
-                                        the status of temporary dentition.
-                                    </p>
-                                </div>
-                                <div class=" ">
-                                    <table class="w-full text-sm text-center border-1">
-                                        <thead class="text-sm align-text-top text-gray-700 border">
-                                            <tr>
-                                                <th scope="col" class="border-1">
-                                                    Permanent <br> <input type="checkbox" id="upperCaseChk" checked>
-                                                </th>
-                                                <th scope="col" class=" w-20 border-1">
-                                                    Tooth Condition
-                                                </th>
-                                                <th scope="col" class="border-1">
-                                                    Temporary <br> <input type="checkbox" id="lowerCaseChk">
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="border-1">
-                                                <td class=" border-1">
-                                                    ✓
-                                                </td>
-                                                <td class="border-1">
-                                                    Sound/Sealed
-                                                </td>
-                                                <td class="border-1">
-                                                    ✓
-                                                </td>
-                                            </tr>
-                                            <tr class="border-1">
-                                                <td class="border-1">
-                                                    D
-                                                </td>
-                                                <td class="border-1">
-                                                    Decayed
-                                                </td>
-                                                <td class="border-1">
-                                                    d
-                                                </td>
-                                            </tr>
-                                            <tr class="border-1">
-                                                <td class="border-1">
-                                                    F
-                                                </td>
-                                                <td class="border-1">
-                                                    Filled
-                                                </td>
-                                                <td class="border-1">
-                                                    f
-                                                </td>
-                                            </tr>
-                                            <tr class="border-1">
-                                                <td class="border-1">
-                                                    M
-                                                </td>
-                                                <td class="border-1">
-                                                    Missing
-                                                </td>
-                                                <td class="border-1">
-                                                    m
-                                                </td>
-                                            </tr>
-                                            <tr class="border-1">
-                                                <td class="border-1">
-                                                    DX
-                                                </td>
-                                                <td class="p-1 border-1">
-                                                    Indicated for Extraction
-                                                </td>
-                                                <td class="border-1">
-                                                    dx
-                                                </td>
-                                            </tr>
-                                            <tr class="border-1">
-                                                <td class="border-1">
-                                                    Un
-                                                </td>
-                                                <td class="border-1">
-                                                    Unerupted
-                                                </td>
-                                                <td class="border-1">
-                                                    un
-                                                </td>
-                                            </tr>
-                                            <tr class="border-1">
-                                                <td class="border-1">
-                                                    S
-                                                </td>
-                                                <td class="border-1">
-                                                    Supernumerary Tooth
-                                                </td>
-                                                <td class="border-1">
-                                                    s
-                                                </td>
-                                            </tr>
-                                            <tr class="border-1">
-                                                <td class="border-1">
-                                                    JC
-                                                </td>
-                                                <td class="border-1">
-                                                    jacket Crown
-                                                </td>
-                                                <td class="border-1">
-                                                    jc
-                                                </td>
-                                            </tr>
-                                            <tr class="border-1">
-                                                <td class="border-1">
-                                                    P
-                                                </td>
-                                                <td class="border-1">
-                                                    Pontic
-                                                </td>
-                                                <td class="border-1">
-                                                    p
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="flex items-center w-full flex-row gap-1 ">
-                                    <label class="text-sm font-semibold w-12  text-gray-900 dark:text-white">Color
-                                        Code:</label>
-                                    <select id="blueSelect"
-                                        class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm p-1.5 w-31.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                        <option selected value="">Blue</option>
-                                        <option value="S">Sound/Sealed✓</option>
-                                        <option value="D">Blue D/d</option>
-                                        <option value="F">Blue F/f</option>
-                                        <option value="M">Blue M/m</option>
-                                        <option value="DX">Blue DX/dx</option>
-                                        <option value="Un">Blue Un/un</option>
-                                        <option value="S">Blue S/s</option>
-                                        <option value="JC">Blue JC/jc</option>
-                                        <option value="P">Blue P/p</option>
-                                    </select>
-                                    <select id="redSelect"
-                                        class="text-white justify-center  cursor-pointer inline-flex items-center bg-red-600 hover:bg-red-700  focus:outline-none focus:ring-red-200 font-medium rounded-sm text-sm p-1.5 w-31.5 dark:bg-red-500 dark:hover:bg-red-700 dark:focus:ring-red-700">
-                                        <option selected value="">Red</option>
-                                        <option value="S">Sound/Sealed✓</option>
-                                        <option value="D">Red D/d</option>
-                                        <option value="F">Red F/f</option>
-                                        <option value="M">Red M/m</option>
-                                        <option value="DX">Red DX/dx</option>
-                                        <option value="Un">Red Un/un</option>
-                                        <option value="S">Red S/s</option>
-                                        <option value="JC">Red JC/jc</option>
-                                        <option value="P">Red P/p</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- Treatment -->
-                            <div
-                                class="controls  p-1 flex rounded-sm flex-col border border-dashed border-gray-400 [border-image:repeating-linear-gradient(45deg,#6b7280_0_10px,transparent_10px_15px)_1]">
-                                <div class="w-48 flex flex-col justify-center items-center p-2">
-                                    <div class="flex flex-col gap-3">
+                                <!-- Condition -->
+                                <div
+                                    class="controls relative w-full p-1 flex rounded-sm flex-col border border-dashed border-gray-400 [border-image:repeating-linear-gradient(45deg,#6b7280_0_10px,transparent_10px_15px)_1]">
+                                    <div>
                                         <p class="text-sm font-medium  text-gray-900 dark:text-white">Legend: <span
-                                                class="font-normal">Treament</span>
+                                                class="font-normal">Condition</span>
                                         </p>
-                                        <div class="flex flex-col gap-3">
-                                            <p class="text-sm font-normal  text-gray-900 dark:text-white">Topical
-                                                Fluoride
-                                                Application:
-                                            </p>
-                                            <p class="text-sm font-normal ml-5 text-gray-900 dark:text-white">FV -
-                                                Fluoride
-                                                Varnish
-                                            <p class="text-sm font-normal ml-5 text-gray-900 dark:text-white">FG -
-                                                Fluoride
-                                                Gel
-                                            </p>
-                                        </div>
-                                        <p class="text-sm font-normal  text-gray-900 dark:text-white">PFS - Pit and
-                                            Fissure Sealant
-                                        </p>
-                                        <p class="text-sm font-normal  text-gray-900 dark:text-white">PF - Permanent
-                                            Filling (Composite, Am, ART)
-                                        </p>
-                                        <p class="text-sm font-normal  text-gray-900 dark:text-white">TF - Temporary
-                                            Filling
-                                        </p>
-                                        <p class="text-sm font-normal  text-gray-900 dark:text-white">X - Extraction
-                                        </p>
-                                        <p class="text-sm font-normal  text-gray-900 dark:text-white">O - Others
+                                        <p class="text-sm font-normal  text-gray-900 dark:text-white">Capital letters
+                                            shall
+                                            be use for recording the condition of permanent dentition and small letters
+                                            for
+                                            the status of temporary dentition.
                                         </p>
                                     </div>
+                                    <div class=" ">
+                                        <table class="w-full text-sm text-center border-1">
+                                            <thead class="text-sm align-text-top text-gray-700 border">
+                                                <tr>
+                                                    <th scope="col" class="border-1">
+                                                        Permanent <br> <input type="checkbox" id="upperCaseChk" checked>
+                                                    </th>
+                                                    <th scope="col" class=" w-20 border-1">
+                                                        Tooth Condition
+                                                    </th>
+                                                    <th scope="col" class="border-1">
+                                                        Temporary <br> <input type="checkbox" id="lowerCaseChk">
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="border-1">
+                                                    <td class=" border-1">
+                                                        ✓
+                                                    </td>
+                                                    <td class="border-1">
+                                                        Sound/Sealed
+                                                    </td>
+                                                    <td class="border-1">
+                                                        ✓
+                                                    </td>
+                                                </tr>
+                                                <tr class="border-1">
+                                                    <td class="border-1">
+                                                        D
+                                                    </td>
+                                                    <td class="border-1">
+                                                        Decayed
+                                                    </td>
+                                                    <td class="border-1">
+                                                        d
+                                                    </td>
+                                                </tr>
+                                                <tr class="border-1">
+                                                    <td class="border-1">
+                                                        F
+                                                    </td>
+                                                    <td class="border-1">
+                                                        Filled
+                                                    </td>
+                                                    <td class="border-1">
+                                                        f
+                                                    </td>
+                                                </tr>
+                                                <tr class="border-1">
+                                                    <td class="border-1">
+                                                        M
+                                                    </td>
+                                                    <td class="border-1">
+                                                        Missing
+                                                    </td>
+                                                    <td class="border-1">
+                                                        m
+                                                    </td>
+                                                </tr>
+                                                <tr class="border-1">
+                                                    <td class="border-1">
+                                                        DX
+                                                    </td>
+                                                    <td class="p-1 border-1">
+                                                        Indicated for Extraction
+                                                    </td>
+                                                    <td class="border-1">
+                                                        dx
+                                                    </td>
+                                                </tr>
+                                                <tr class="border-1">
+                                                    <td class="border-1">
+                                                        Un
+                                                    </td>
+                                                    <td class="border-1">
+                                                        Unerupted
+                                                    </td>
+                                                    <td class="border-1">
+                                                        un
+                                                    </td>
+                                                </tr>
+                                                <tr class="border-1">
+                                                    <td class="border-1">
+                                                        S
+                                                    </td>
+                                                    <td class="border-1">
+                                                        Supernumerary Tooth
+                                                    </td>
+                                                    <td class="border-1">
+                                                        s
+                                                    </td>
+                                                </tr>
+                                                <tr class="border-1">
+                                                    <td class="border-1">
+                                                        JC
+                                                    </td>
+                                                    <td class="border-1">
+                                                        jacket Crown
+                                                    </td>
+                                                    <td class="border-1">
+                                                        jc
+                                                    </td>
+                                                </tr>
+                                                <tr class="border-1">
+                                                    <td class="border-1">
+                                                        P
+                                                    </td>
+                                                    <td class="border-1">
+                                                        Pontic
+                                                    </td>
+                                                    <td class="border-1">
+                                                        p
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="flex items-center w-full flex-row gap-1 ">
+                                        <label class="text-sm font-semibold w-12  text-gray-900 dark:text-white">Color
+                                            Code:</label>
+                                        <select id="blueSelect"
+                                            class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm p-1.5 w-31.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            <option selected value="">Blue</option>
+                                            <option value="S">Sound/Sealed✓</option>
+                                            <option value="D">Blue D/d</option>
+                                            <option value="F">Blue F/f</option>
+                                            <option value="M">Blue M/m</option>
+                                            <option value="DX">Blue DX/dx</option>
+                                            <option value="Un">Blue Un/un</option>
+                                            <option value="S">Blue S/s</option>
+                                            <option value="JC">Blue JC/jc</option>
+                                            <option value="P">Blue P/p</option>
+                                        </select>
+                                        <select id="redSelect"
+                                            class="text-white justify-center  cursor-pointer inline-flex items-center bg-red-600 hover:bg-red-700  focus:outline-none focus:ring-red-200 font-medium rounded-sm text-sm p-1.5 w-31.5 dark:bg-red-500 dark:hover:bg-red-700 dark:focus:ring-red-700">
+                                            <option selected value="">Red</option>
+                                            <option value="S">Sound/Sealed✓</option>
+                                            <option value="D">Red D/d</option>
+                                            <option value="F">Red F/f</option>
+                                            <option value="M">Red M/m</option>
+                                            <option value="DX">Red DX/dx</option>
+                                            <option value="Un">Red Un/un</option>
+                                            <option value="S">Red S/s</option>
+                                            <option value="JC">Red JC/jc</option>
+                                            <option value="P">Red P/p</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Treatment -->
+                                <div
+                                    class="controls  p-1 flex rounded-sm flex-col border border-dashed border-gray-400 [border-image:repeating-linear-gradient(45deg,#6b7280_0_10px,transparent_10px_15px)_1]">
+                                    <div class="w-48 flex flex-col justify-center items-center p-2">
+                                        <div class="flex flex-col gap-3">
+                                            <p class="text-sm font-medium  text-gray-900 dark:text-white">Legend: <span
+                                                    class="font-normal">Treament</span>
+                                            </p>
+                                            <div class="flex flex-col gap-3">
+                                                <p class="text-sm font-normal  text-gray-900 dark:text-white">Topical
+                                                    Fluoride
+                                                    Application:
+                                                </p>
+                                                <p class="text-sm font-normal ml-5 text-gray-900 dark:text-white">FV -
+                                                    Fluoride
+                                                    Varnish
+                                                <p class="text-sm font-normal ml-5 text-gray-900 dark:text-white">FG -
+                                                    Fluoride
+                                                    Gel
+                                                </p>
+                                            </div>
+                                            <p class="text-sm font-normal  text-gray-900 dark:text-white">PFS - Pit and
+                                                Fissure Sealant
+                                            </p>
+                                            <p class="text-sm font-normal  text-gray-900 dark:text-white">PF - Permanent
+                                                Filling (Composite, Am, ART)
+                                            </p>
+                                            <p class="text-sm font-normal  text-gray-900 dark:text-white">TF - Temporary
+                                                Filling
+                                            </p>
+                                            <p class="text-sm font-normal  text-gray-900 dark:text-white">X - Extraction
+                                            </p>
+                                            <p class="text-sm font-normal  text-gray-900 dark:text-white">O - Others
+                                            </p>
+                                        </div>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </form>
+                </div>
+                <!-- Set B -->
+                <div>
+                    <div class="mb-3">
+                        <p class="text-14 font-semibold  text-gray-900 dark:text-white">B. Services Monitoring Chart
+                        </p>
                     </div>
+                    <form action="#">
+                        <div class="flex flex-col w-full justify-between items-center">
+                            <!-- top -->
+                            <div class="w-full flex flex-row gap-5">
+                                <div class="w-160 flex flex-col">
+                                    <p style="font-size: 14.2px;"
+                                        class=" font-normal text-gray-900 dark:text-white p-1 mb-2"> Fluoride
+                                        Varnish/Fluoride Gel, Pit and fissure Sealant, Permanent Filling, temporary
+                                        Filling, Extraction
+                                    </p>
+                                    <div class="flex flex-row justify-between items-center w-full px-1 mb-5">
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">55</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">54</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">53</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">52</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">51</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">61</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">62</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">63</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">64</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">65</label>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between items-center w-full px-1">
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required=""><label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">85</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">84</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">83</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">82</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">81</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">71</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">72</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">73</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">74</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">75</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="controls  flex rounded-sm flex-col ">
+                                    <div class="w-full flex flex-col justify-center items-center ">
+                                        <div class="flex flex-col gap-0.5">
+                                            <p style="font-size: 14.2px;"
+                                                class="text-sm font-medium  text-gray-900 dark:text-white">Legend: <span
+                                                    class="font-normal">Treament</span>
+                                            </p>
+                                            <div class="flex flex-col gap-0.5">
+                                                <p style="font-size: 14.2px;"
+                                                    class="text-sm font-normal  text-gray-900 dark:text-white">Topical
+                                                    Fluoride
+                                                    Application:
+                                                </p>
+                                                <p style="font-size: 14.2px;"
+                                                    class="text-sm font-normal ml-5 text-gray-900 dark:text-white">FV -
+                                                    Fluoride
+                                                    Varnish
+                                                <p style="font-size: 14.2px;"
+                                                    class="text-sm font-normal ml-5 text-gray-900 dark:text-white">FG -
+                                                    Fluoride
+                                                    Gel
+                                                </p>
+                                            </div>
+                                            <p style="font-size: 14.2px;"
+                                                class="text-sm font-normal  text-gray-900 dark:text-white">PFS - Pit and
+                                                Fissure Sealant
+                                            </p>
+                                            <p style="font-size: 14.2px;"
+                                                class="text-sm font-normal  text-gray-900 dark:text-white">PF -
+                                                Permanent
+                                                Filling (Composite, Am, ART)
+                                            </p>
+                                            <p style="font-size: 14.2px;"
+                                                class="text-sm font-normal  text-gray-900 dark:text-white">TF -
+                                                Temporary
+                                                Filling
+                                            </p>
+                                            <p style="font-size: 14.2px;"
+                                                class="text-sm font-normal  text-gray-900 dark:text-white">X -
+                                                Extraction
+                                            </p>
+                                            <p style="font-size: 14.2px;"
+                                                class="text-sm font-normal  text-gray-900 dark:text-white">O - Others
+                                            </p>
+                                        </div>
 
-                </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Bot -->
+                            <div style="margin-top: -35px;" class="w-full flex flex-row gap-5">
+                                <div class="w-full flex flex-col">
+                                    <p style="font-size: 14.2px;"
+                                        class=" font-normal text-gray-900 dark:text-white p-1 mb-2"> Fluoride
+                                        Varnish/Fluoride Gel, Pit and fissure Sealant, Permanent Filling, temporary
+                                        Filling, Extraction
+                                    </p>
+                                    <div class="flex flex-row justify-between items-center w-full px-1 mb-5">
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">18</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">17</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">16</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">15</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">14</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">13</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">12</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">11</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">21</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">22</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">23</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">24</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">25</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">26</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">27</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">28</label>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between items-center w-full px-1 mb-5">
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">48</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">47</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">46</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">45</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">44</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">43</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">42</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">41</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">31</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">32</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">33</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">34</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">35</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">36</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">37</label>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-2">
+                                            <input type="text"
+                                                class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="" required="">
+                                            <label for="name"
+                                                class="flex text-sm font-medium text-gray-900 dark:text-white">38</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
             </section>
             <div class="flex justify-between w-full">
                 <button type="button" onclick="back2()"
