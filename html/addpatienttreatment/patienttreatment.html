@@ -360,7 +360,7 @@
                 </ul>
                 <ul class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700">
                     <li>
-                        <a href="#"
+                        <a href="../reports/targetclientlist.html"
                             class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                             <svg aria-hidden="true"
                                 class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -375,7 +375,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="../reports/mho_ohp.html"
                             class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                             <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                                 aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -1693,7 +1693,7 @@
                                                 class="flex text-sm font-medium text-gray-900 dark:text-white">28</label>
                                         </div>
                                     </div>
-                                    <div class="flex flex-row justify-between items-center w-full px-1 mb-5">
+                                    <div class="flex flex-row justify-between items-center w-full px-1 mb-3">
                                         <div class="flex flex-col items-center gap-2">
                                             <input type="text"
                                                 class="bg-gray-50 border border-gray-300 w-10 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
@@ -1812,16 +1812,125 @@
                         </div>
                     </form>
                 </div>
-
             </section>
             <div class="flex justify-between w-full">
                 <button type="button" onclick="back2()"
                     class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-18 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                     Back
                 </button>
-                <button type="button" onclick="next2()"
+                <button type="button" onclick="next3()"
                     class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-18 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                     Next
+                </button>
+            </div>
+        </main>
+        <!-- Record of Services Oriented -->
+        <main class="p-3 md:ml-64 h-auto pt-15" id="recofservoriented" style="display: none; flex-direction: column;">
+            <div class="text-center">
+                <p class="text-lg font-semibold  text-gray-900 dark:text-white">Individual Patient Treatment Record
+                </p>
+            </div>
+
+            <section class="bg-white dark:bg-gray-900 p-2 rounded-lg mb-3 mt-3">
+                <!-- Set A -->
+                <div>
+                    <div class="mb-3">
+                        <p class="text-14 font-semibold  text-gray-900 dark:text-white">Record of Seervices Oriented
+                        </p>
+                    </div>
+                    <form action="#">
+                        <div class="flex flex-col w-full justify-between items-center gap-5">
+                            <ul class="w-full space-y-1 text-sm list-disc list-inside ml-5 mb-5">
+                                <li>
+                                    For Oral Prophylaxis, Fluoride Varnish/Gel - Check (✓) id rendered.
+                                </li>
+                                <li>
+                                    For Permanent & Temporary Filling, Pit and Fissure Sealant and Extraction -
+                                    Indication number.
+                                </li>
+                            </ul>
+                            <div class="w-full flex flex-col gap-5 p-1">
+                                <div class="w-full flex flex-row justify-between relative gap-5">
+                                    <div class="w-full">
+                                        <label for="name"
+                                            class="flex mb-2 text-sm font-medium text-gray-900 dark:text-white">Oral
+                                            Prophylaxis</label>
+                                        <input type="text" name="name" id="name"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                            placeholder="" required="">
+                                    </div>
+                                    <div class="w-full">
+                                        <label for="name"
+                                            class="flex mb-2 text-sm font-medium text-gray-900 dark:text-white">Fluoride
+                                            Varnish / Fluoride Gel</label>
+                                        <input type="text" name="name" id="name"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                            placeholder="" required="">
+                                    </div>
+                                    <div class="w-full">
+                                        <label for="name"
+                                            class="flex mb-2 text-sm font-medium text-gray-900 dark:text-white">Pit and
+                                            Fissure Sealant</label>
+                                        <input type="text" name="name" id="name"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                            placeholder="" required="">
+                                    </div>
+                                </div>
+                                <div class="w-full flex flex-row justify-between relative gap-5">
+                                    <div class="w-full">
+                                        <label for="name"
+                                            class="flex mb-2 text-sm font-medium text-gray-900 dark:text-white">Permanent
+                                            filling</label>
+                                        <input type="text" name="name" id="name"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                            placeholder="" required="">
+                                    </div>
+                                    <div class="w-full">
+                                        <label for="name"
+                                            class="flex mb-2 text-sm font-medium text-gray-900 dark:text-white">Temporary
+                                            Filling</label>
+                                        <input type="text" name="name" id="name"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                            placeholder="" required="">
+                                    </div>
+                                    <div class="w-full">
+                                        <label for="name"
+                                            class="flex mb-2 text-sm font-medium text-gray-900 dark:text-white">Extraction</label>
+                                        <input type="text" name="name" id="name"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                            placeholder="" required="">
+                                    </div>
+                                </div>
+                                <div class="w-full flex flex-row justify-between relative gap-5 mb-14">
+                                    <div class="w-129">
+                                        <label for="name"
+                                            class="flex mb-2 text-sm font-medium text-gray-900 dark:text-white">Consultaion</label>
+                                        <input type="text" name="name" id="name"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                            placeholder="" required="">
+                                    </div>
+                                    <div class="w-full">
+                                        <label for="name"
+                                            class="flex mb-2 text-sm font-medium text-gray-900 dark:text-white">Remarks
+                                            / Others (Specify)</label>
+                                        <textarea rows="4"
+                                            class="bg-gray-50 border border-gray-300 h-30 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                            placeholder="" required=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <div class="flex justify-between w-full">
+                <button type="button" onclick="back3()"
+                    class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-18 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Back
+                </button>
+                <button type="submit" onclick="submit()"
+                    class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-18 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Submit
                 </button>
             </div>
         </main>
@@ -1865,6 +1974,24 @@
             document.getElementById("patienttreatmentvital").style.display = "none";
             document.getElementById("oralhealth").style.display = "flex";
             document.getElementById("oralhealthA&B").style.display = "none";
+        }
+        function next3() {
+            document.getElementById("patienttreatment").style.display = "none";
+            document.getElementById("patienttreatmentvital").style.display = "none";
+            document.getElementById("oralhealth").style.display = "none";
+            document.getElementById("oralhealthA&B").style.display = "none";
+            document.getElementById("recofservoriented").style.display = "flex";
+        }
+        function back3() {
+            document.getElementById("patienttreatment").style.display = "none";
+            document.getElementById("patienttreatmentvital").style.display = "none";
+            document.getElementById("oralhealth").style.display = "none";
+            document.getElementById("oralhealthA&B").style.display = "flex";
+            document.getElementById("recofservoriented").style.display = "none";
+        }
+        function submit() {
+            alert("Patient Treatment Record Added Successfully!");
+            location.href="../treatmentrecords.html";
         }
     </script>
     <!-- Tooth -->
