@@ -163,7 +163,7 @@
                         </button>
                         <ul id="dropdown-pages" class="hidden py-2 space-y-2">
                             <li>
-                                <a href="treatmentrecords.html"
+                                <a href="./treatmentrecords/treatmentrecords.html"
                                     class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Treatment
                                     Records</a>
                             </li>
@@ -391,7 +391,7 @@
                                             class="px-4 py-3 text-center font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                             Tayamaan</td>
                                         <td class="px-4 py-3 items-center flex justify-center">
-                                            <button type="button"
+                                            <button type="button" onclick="view()"
                                                 class="text-white cursor-pointer  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-2 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
                                                 View
                                             </button>
@@ -409,7 +409,7 @@
                 class="hidden overflow-y-hidden overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-auto md:inset-y-13  max-h-152 md:h-152 ">
                 <div class="relative  w-full max-w-4xl h-full md:h-auto">
                     <!-- Modal content -->
-                    <div class="scroll relative border-gray-900 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5">
+                    <div class="scroll relative border-gray-900 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-2">
                         <!-- Modal header -->
                         <div
                             class="flex justify-between items-center pb-4 rounded-t border-b sm:mb-2 dark:border-gray-600">
@@ -552,7 +552,7 @@
                                             <label for="default-checkbox"
                                                 class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">PhilHealth
                                                 (Indicate Number)</label>
-                                            <input type="text" name="floating_email" id="floating_email"
+                                            <input type="text"
                                                 class="block py-1 h-4.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                                 placeholder=" " />
                                         </div>
@@ -560,27 +560,26 @@
                                     <div class="flex items-center mb-1">
                                         <input id="default-checkbox" type="checkbox" value=""
                                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <div class="grid grid-cols-2 items-center gap-4">
+                                        <div class="grid grid-cols-2 items-center gap-1">
                                             <label for="default-checkbox"
-                                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">SSS
+                                                class="ms-2 not-last-of-type:w-40 text-sm font-medium text-gray-900 dark:text-gray-300">SSS
                                                 (Indicate Number)</label>
-                                            <input type="text" name="floating_email" id="floating_email"
-                                                class="block py-1 h-4.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            <input type="text"
+                                                class="block py-1 h-4.5 px-0 w-50 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                                 placeholder=" " />
                                         </div>
                                     </div>
                                     <div class="flex items-center mb-1">
                                         <input id="default-checkbox" type="checkbox" value=""
                                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <div class="grid grid-cols-2 items-center gap-4">
+                                        <div class="grid grid-cols-2 items-center gap-1">
                                             <label for="default-checkbox"
-                                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">GSIS
+                                                class="ms-2 w-40 text-sm font-medium text-gray-900 dark:text-gray-300">GSIS
                                                 (Indicate Number)</label>
-                                            <input type="text" name="floating_email" id="floating_email"
-                                                class="block py-1 px-0 h-4.5 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            <input type="text"
+                                                class="block py-1 px-0 h-4.5 w-50 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                                 placeholder=" " />
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -598,10 +597,10 @@
             </div>
             <!-- Second Modal -->
             <div id="addpatientModal2" tabindex="-1" aria-hidden="true"
-                class="hidden overflow-y-hidden overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-y-0  max-h-152 md:h-152 ">
+                class="hidden overflow-y-hidden overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-auto md:inset-y-13  max-h-152 md:h-152 ">
                 <div class="relative  w-full max-w-4xl h-full md:h-auto">
                     <!-- Modal content -->
-                    <div class="scroll relative border-gray-900 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5">
+                    <div class="scroll relative border-gray-900 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-2">
                         <!-- Modal header -->
                         <div
                             class="flex justify-between items-center pb-4 rounded-t border-b sm:mb-2 dark:border-gray-600">
@@ -626,6 +625,7 @@
                                 <p class="text-lg font-semibold mt-5 text-gray-900 dark:text-white">
                                     Individual Patient Treatment Record</p>
                             </div>
+
                             <p class="text-14 font-semibold text-gray-900 dark:text-white">Vital Signs
                             </p>
                             <div class="grid gap-2 mb-4 w-full">
@@ -636,14 +636,14 @@
                                             Preassure</label>
                                         <input type="text" name="name" id="name"
                                             class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                            placeholder="Surname" required="">
+                                            placeholder="" required="">
                                     </div>
                                     <div class="w-full">
                                         <label for="name"
                                             class="block mb-2 text-xs font-medium text-gray-900 dark:text-white">Temperature</label>
                                         <input type="text" name="name" id="name"
                                             class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                            placeholder="Surname" required="">
+                                            placeholder="" required="">
                                     </div>
                                     <div class="w-full">
                                         <label for="name"
@@ -651,92 +651,151 @@
                                             Rate</label>
                                         <input type="text" name="name" id="name"
                                             class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                            placeholder="Surname" required="">
+                                            placeholder="" required="">
                                     </div>
                                     <div class="w-full">
                                         <label for="name"
                                             class="block mb-2 text-xs font-medium text-gray-900 dark:text-white">Weight</label>
                                         <input type="text" name="name" id="name"
                                             class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-sm focus:ring-primary-600 focus:border-primary-600 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                            placeholder="Surname" required="">
+                                            placeholder="" required="">
                                     </div>
                                 </div>
                             </div>
-                            <!-- Other Patient Info -->
-                            <div class="grid mb-4 gap-2">
-                                <p class="text-14 font-semibold text-gray-900 dark:text-white">Other Patient Information
-                                    (Membership)
-                                </p>
-                                <div>
-                                    <div class="flex items-center mb-1">
-                                        <input id="default-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <label for="default-checkbox"
-                                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">National
-                                            Household Targeting System - Poverty Reduction (NHTS-PR)</label>
-                                    </div>
-                                    <div class="flex items-center mb-1">
-                                        <input id="default-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <label for="default-checkbox"
-                                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Pantawid
-                                            Pamilyang Pilipino Program (4Ps)</label>
-                                    </div>
-                                    <div class="flex items-center mb-1">
-                                        <input id="default-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <label for="default-checkbox"
-                                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Indigenous
-                                            People (IP)</label>
-                                    </div>
-                                    <div class="flex items-center mb-1">
-                                        <input id="default-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <label for="default-checkbox"
-                                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Person
-                                            With Disabilities (PWDs)</label>
-                                    </div>
-                                    <div class="flex items-center mb-1">
-                                        <input id="default-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <div class="grid grid-cols-2 items-center gap-4">
+                            <div class=" overflow-auto h-[310px] mb-3">
+                                <!-- Other Patient Info -->
+                                <div class="grid mb-4 gap-2 ">
+                                    <p class="text-14 font-semibold text-gray-900 dark:text-white">Medical History
+                                    </p>
+                                    <div>
+                                        <div class="flex w-125  items-center mb-1">
+                                            <input id="default-checkbox" type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                            <div class="grid grid-cols-2 items-center gap-1">
+                                                <label for="default-checkbox"
+                                                    class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Allergies
+                                                    (Please specify)</label>
+                                                <input type="text"
+                                                    class="block py-1 h-4.5 px-0 w-59 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                                    placeholder=" " />
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center mb-1">
+                                            <input id="default-checkbox" type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                                             <label for="default-checkbox"
-                                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">PhilHealth
-                                                (Indicate Number)</label>
-                                            <input type="text" name="floating_email" id="floating_email"
-                                                class="block py-1 h-4.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Hypertension
+                                                / CVA</label>
+                                        </div>
+                                        <div class="flex items-center mb-1">
+                                            <input id="default-checkbox" type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                            <label for="default-checkbox"
+                                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Diabetes
+                                                Mellitus</label>
+                                        </div>
+                                        <div class="flex items-center mb-1">
+                                            <input id="default-checkbox" type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                            <label for="default-checkbox"
+                                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Blood
+                                                Disorders</label>
+                                        </div>
+                                        <div class="flex items-center mb-1">
+                                            <input id="default-checkbox" type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                            <label for="default-checkbox"
+                                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">cardiovarscular
+                                                / Heart Diseases</label>
+                                        </div>
+                                        <div class="flex items-center mb-1">
+                                            <input id="default-checkbox" type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                            <label for="default-checkbox"
+                                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Thyroid
+                                                Disorders</label>
+                                        </div>
+                                        <div class="flex w-125  items-center mb-1">
+                                            <input id="default-checkbox" type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                            <div class="grid grid-cols-2 items-center gap-1">
+                                                <label for="default-checkbox"
+                                                    class="ms-2 text-sm w-50  font-medium text-gray-900 dark:text-gray-300">Hepatitis
+                                                    (Please specify type)</label>
+                                                <input type="text"
+                                                    class="block py-1 h-4.5 px-0 w-59 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                                    placeholder=" " />
+                                            </div>
+                                        </div>
+                                        <div class="flex w-125  items-center mb-1">
+                                            <input id="default-checkbox" type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                            <div class="grid grid-cols-2 items-center gap-1">
+                                                <label for="default-checkbox"
+                                                    class="ms-2 w-50 text-sm  font-medium text-gray-900 dark:text-gray-300">Malignancy
+                                                    (Please specify)</label>
+                                                <input type="text"
+                                                    class="block py-1 h-4.5 px-0 w-59 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                                    placeholder=" " />
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center mb-1">
+                                            <input id="default-checkbox" type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                            <div class="grid grid-cols-2 items-center gap-1">
+                                                <label for="default-checkbox"
+                                                    class="ms-2  w-100 text-sm font-medium text-gray-900 dark:text-gray-300">History
+                                                    of Previous Hospitalization:</label>
+                                            </div>
+                                        </div>
+                                        <div class="grid w-120 grid-cols-2 ml-4">
+                                            <label for="default-checkbox"
+                                                class="ms-2 w-55 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                                Medical (Last Admission & Cause)</label>
+                                            <input type="text"
+                                                class="block py-1 px-0 h-4.5  text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                                 placeholder=" " />
                                         </div>
-                                    </div>
-                                    <div class="flex items-center mb-1">
-                                        <input id="default-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <div class="grid grid-cols-2 items-center gap-4">
+                                        <div class="grid w-120 grid-cols-2 gap-1 ml-4">
                                             <label for="default-checkbox"
-                                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">SSS
-                                                (Indicate Number)</label>
-                                            <input type="text" name="floating_email" id="floating_email"
-                                                class="block py-1 h-4.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                                class="ms-2 w-55 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                                Surgical (Post-Operative)</label>
+                                            <input type="text"
+                                                class="block py-1 px-0 h-4.5 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                                 placeholder=" " />
                                         </div>
+                                        <div class="flex w-125 items-center  mb-1">
+                                            <input id="default-checkbox" type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                            <div class="grid grid-cols-2 items-center gap-1">
+                                                <label for="default-checkbox"
+                                                    class="ms-2 not-last-of-type:w-40 text-sm font-medium text-gray-900 dark:text-gray-300">Blood
+                                                    transfusion (Month & Year)</label>
+                                                <input type="text"
+                                                    class="block py-1 h-4.5 px-0 w-59.5 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                                    placeholder=" " />
+                                            </div>
+                                        </div>
+                                        <div class="flex w-120 items-center mb-1">
+                                            <input id="default-checkbox" type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                            <label for="default-checkbox"
+                                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Tattoo</label>
+                                        </div>
                                     </div>
-                                    <div class="flex items-center mb-1">
+                                    <div class="flex w-125  items-center mb-1">
                                         <input id="default-checkbox" type="checkbox" value=""
                                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <div class="grid grid-cols-2 items-center gap-4">
+                                        <div class="grid grid-cols-2 items-center gap-">
                                             <label for="default-checkbox"
-                                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">GSIS
-                                                (Indicate Number)</label>
-                                            <input type="text" name="floating_email" id="floating_email"
-                                                class="block py-1 px-0 h-4.5 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                                class="ms-2 w-40  text-sm font-medium text-gray-900 dark:text-gray-300">Others
+                                                (Please specify)</label>
+                                            <input type="text"
+                                                class="block py-1 h-4.5 px-0 w-60 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                                 placeholder=" " />
                                         </div>
-
                                     </div>
                                 </div>
-                            </div>
-                            <div class="flex justify-end">
-
                             </div>
                             <div class="flex justify-between w-full">
                                 <button type="button" id="Addpatientbtnb" data-modal-target="addpatientModal"
@@ -756,10 +815,10 @@
             </div>
             <!-- Third Modal -->
             <div id="addpatientModal3" tabindex="-1" aria-hidden="true"
-                class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-y-12 max-h-152 md:h-152">
+                class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-y-15.5 max-h-152 md:h-152">
                 <div class="relative pt-2.5 w-full max-w-4xl h-full md:h-900px">
                     <!-- Modal content -->
-                    <div class="scroll relative p-2 border-gray-900 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5">
+                    <div class="scroll relative p-2 border-gray-900 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-2">
                         <!-- Modal header -->
                         <div
                             class="flex justify-between items-center pb-4 rounded-t border-b sm:mb-2 dark:border-gray-600">
@@ -793,23 +852,23 @@
                                     <div class="flex items-center mb-1">
                                         <input id="default-checkbox" type="checkbox" value=""
                                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <div class="grid grid-cols-2 gap-4">
+                                        <div class="grid grid-cols-2 ">
                                             <label for="default-checkbox"
-                                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Sugar
+                                                class="ms-2 text-sm w-90 font-medium text-gray-900 dark:text-gray-300">Sugar
                                                 Sweetened Beverages/Food (Amount, Frequency & Duration)</label>
-                                            <input type="text" name="floating_email" id="floating_email"
-                                                class="block py-1 h-4.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            <input type="text"
+                                                class="block py-1 h-4.5 px-0 w-70 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                                 placeholder=" " />
                                         </div>
                                     </div>
                                     <div class="flex items-center mb-1">
                                         <input id="default-checkbox" type="checkbox" value=""
                                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <div class="grid grid-cols-2 gap-4">
+                                        <div class="grid grid-cols-2 gap-6.5">
                                             <label for="default-checkbox"
                                                 class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Use of
                                                 Alcohol (Amount, Frequency & Duration)</label>
-                                            <input type="text" name="floating_email" id="floating_email"
+                                            <input type="text"
                                                 class="block py-1 px-0 h-4.5 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                                 placeholder=" " />
                                         </div>
@@ -817,12 +876,12 @@
                                     <div class="flex items-center mb-1">
                                         <input id="default-checkbox" type="checkbox" value=""
                                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <div class="grid grid-cols-2 gap-4">
+                                        <div class="grid grid-cols-2 gap-5.5">
                                             <label for="default-checkbox"
                                                 class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Use of
                                                 Tobacco (Amount, Frequency & Duration)</label>
-                                            <input type="text" name="floating_email" id="floating_email"
-                                                class="block py-1 h-4.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            <input type="text"
+                                                class="block py-1 h-4.5 px-0 w-78 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                                 placeholder=" " />
                                         </div>
                                     </div>
@@ -833,8 +892,8 @@
                                             <label for="default-checkbox"
                                                 class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Betel
                                                 Nut Chewing (Amount, Frequency & Duration)</label>
-                                            <input type="text" name="floating_email" id="floating_email"
-                                                class="block py-1 h-4.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            <input type="text"
+                                                class="block py-1 h-4.5 px-0 w-73.5 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                                 placeholder=" " />
                                         </div>
                                     </div>
@@ -864,7 +923,11 @@
     <!-- <script src="../node_modules/flowbite/dist/flowbite.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="../js/tailwind.config.js"></script>
-
+    <script>
+        function view() {
+            location.href = ("viewrecord.html");
+        }
+    </script>
 </body>
 
 </html>
