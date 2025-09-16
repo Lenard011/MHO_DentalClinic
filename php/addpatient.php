@@ -924,7 +924,7 @@
                                 </button>
                                 <button type="submit" name="patient"
                                     class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-15 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Submit
+                                    Next
                                 </button>
                             </div>
                         </div>
@@ -979,6 +979,7 @@
         $stmt->close();
     }
     ?>
+
 </body>
 
 </html>
