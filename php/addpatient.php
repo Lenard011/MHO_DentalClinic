@@ -1,3 +1,4 @@
+<?php include "conn.php"; ?>
 <!doctype html>
 <html>
 
@@ -404,7 +405,7 @@
                 </div>
             </section>
             <!-- Add patient Modal -->
-            <form method="POST" action="../php/addpatient.php">
+            <form method="POST" action="#">
                 <!-- FirstModal -->
                 <div id="addpatientModal" tabindex="-1" aria-hidden="true"
                     class="hidden overflow-y-hidden overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-auto md:inset-y-13  max-h-152 md:h-152 ">
@@ -591,6 +592,7 @@
                                     class="text-white justify-center  cursor-pointer inline-flex items-center bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 w-15 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                     Next
                                 </button>
+                                
                             </div>
                         </div>
                     </div>
@@ -950,12 +952,33 @@
                 document.getElementById(id).disabled = !checkbox.checked;
             });
         }
-        form.onsubmit = function (e) {
-            e.preventDefault();  // <-- stops submission
+        form.onsubmit = function(e) {
+            e.preventDefault(); // <-- stops submission
         }
     </script>
+    <?php
 
+    if (isset($_POST["patient"])) {
+        $surname = $_POST["surname"];
+        $firstname = $_POST["firstname"];
+        $middlename = $_POST["middlename"];
+        $date_of_birth = $_POST["dob"];
+        $placeofbirth = $_POST["pob"];
+        $age = $_POST["age"];
+        $sex = $_POST["sex"];
+        $address = $_POST["address"];
+        $occupation = $_POST["occupation"];
 
+        $stmt = $conn->prepare("INSERT INTO patients (surname, firstname, middlename_ date_of_birth, place_of_birth, age, sex, address, occupation) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("sssssssss", $surname, $firstname, $middlename, $date_of_birth, $placeofbirth, $age, $sex, $address, $occupation);
+        // $preparestmt = mysqli_stmt_prepare($stmt, $sqli);
+        if ($stmt->execute()) {
+            echo "<script>alert('Patient Information added successfully!')
+                window.location.href='addpatient.php';</script>";
+        }
+        $stmt->close();
+    }
+    ?>
 </body>
 
 </html>
